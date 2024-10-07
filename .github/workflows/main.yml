@@ -15,7 +15,7 @@ jobs:
         uses: action/checkout@v4
       - name: 'Login to Github container registry'
         user: docker/login-action@v2
-          with:
+        with:
             registry: ghcr.io
             username: ${{ github.actor }}
             password: ${{ secrects.GITHUB_TOKEN }}
